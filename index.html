@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>ChatAp</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+  <div id="login">
+    <h2>Login / Daftar</h2>
+    <input id="username" placeholder="Username">
+    <button onclick="register()">Daftar</button>
+    <button onclick="login()">Login</button>
+  </div>
+
+  <div id="chat" style="display:none;">
+    <h2 id="welcome"></h2>
+    <input id="to" placeholder="Ke siapa?">
+    <div id="messages" style="height:200px; overflow:auto; border:1px solid #ccc;"></div>
+    <input id="message" placeholder="Ketik pesan...">
+    <button onclick="sendMessage()">Kirim</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
